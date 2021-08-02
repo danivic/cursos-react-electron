@@ -1,14 +1,20 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App.js';
+import 'babel-polyfill';
 
-import 'bootstrap/dist/css/bootstrap.min.css'
-import './index.css'
+async function asyncTest () {
+    let test = await myAsyncfunc();
+    console.log(test);
+}
 
-import App from './App'
+async function myAsyncfunc () {
+    return new Promise(resolve => {
+        setTimeout(resolve("async/await now runs"), 1000);
+    })
+}
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-)
+window.onload = () => {
+    ReactDOM.render(<App />, document.getElementById('App'));
+    asyncTest();
+};
