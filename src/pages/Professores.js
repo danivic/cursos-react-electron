@@ -2,8 +2,33 @@ import React from 'react'
 
 export default function Professores() {
     return (
-        <div>
-            <h1>Seus Professores</h1>
-        </div>
+        <html>
+            <head>
+                <title>Professores</title>                
+            </head>
+            <body>
+                <center>
+                    <br />
+                    <h1>Lista dos Professores</h1>
+                    <br />
+                    <hr />
+                    <br/>                    
+                    <div class="elemento">                        
+                    <ul>
+                        <li>Professor 1</li>
+                        <br />
+                        <li>Professor 2</li>
+                        <br />
+                        <li>Professor 3</li>
+                        <br />
+                        <li>Professor 4</li>
+                        <br />
+                        <li>Professor 5</li>
+                    </ul>                    
+                    </div>                    
+                    <br />
+                </center>
+            </body>
+        </html>
     )
 }

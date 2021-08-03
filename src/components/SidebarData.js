@@ -1,49 +1,49 @@
 import React from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
-import * as IoIcons from 'react-icons/io';
+//import * as IoIcons from 'react-icons/io';
 
 export const SidebarData = [
     {
     title:'Home',
-    path:"/Home",
-    icon:<AiIcons.AiFillHome/>,
+    path:"/",
+    icon:<AiIcons.AiOutlineHome/>,
     cName: 'nav-text'
     },
     {
     title:'Alunos',
-    path:"/Alunos",
-    icon:<IoIcons.IoIosPaper />,
+    path:"/alunos",
+    icon:<AiIcons.AiOutlineTeam />,
     cName: 'nav-text'
     },
     {
-    title:'Matricula',
-    path:"/Matricula",
-    icon:<IoIcons.IoIosPaper />,
+    title:'Matrícula',
+    path:"/matricula",
+    icon:<AiIcons.AiOutlineSolution />,
     cName:'nav-text'
     },
     {
-        title:'Cursos',
-        path:"/Cursos",
-        icon:<FaIcons.FaCartPlus />,
+        title:'Cursos de Química',
+        path:"/cursos",
+        icon:<AiIcons.AiOutlineExperiment />,
         cName:'nav-text'
         },
         {
-            title:'Horario',
-            path:"/Horario",
-            icon:<IoIcons.IoIosPaper />,
+            title:'Horário',
+            path:"/horario",
+            icon:<AiIcons.AiOutlineClockCircle />,
             cName:'nav-text'
             },
             {
                 title:'Turmas',
-                path:"/Turmas",
-                icon:<IoIcons.IoIosPaper />,
+                path:"/turmas",
+                icon:<AiIcons.AiOutlineCluster />,
                 cName:'nav-text'
                 },
                 {
                     title:'Professores',
-                    path:"/Professores",
-                    icon:<IoIcons.IoIosPaper />,
+                    path:"/professores",
+                    icon:<FaIcons.FaChalkboardTeacher />,
                     cName:'nav-text'
                     }
 
