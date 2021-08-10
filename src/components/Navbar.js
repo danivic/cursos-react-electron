@@ -15,16 +15,26 @@ function Navbar() {
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
         <div className='navbar'>
+        <div className='nav-x'>
           <Link to='#' className='menu-bars'>
-            <FaIcons.FaBars onClick={showSidebar} />
+            <FaIcons.FaBars onClick={showSidebar} />            
           </Link>
+          </div>
+          <div className='nav-z'>
+          <Link to='#' className='menu-bars'>
+            <FaIcons.FaUserAlt />
+            Login          
+          </Link>
+          </div>          
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>
             <li className='navbar-toggle'>
+            <div className='nav-x'>
               <Link to='#' className='menu-bars'>
                 <AiIcons.AiOutlineClose />
               </Link>
+              </div>
             </li>
             {SidebarData.map((item, index) => {
               return (
