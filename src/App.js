@@ -9,6 +9,7 @@ import Cursos from './pages/Cursos';
 import Horario from './pages/Horario';
 import Turmas from './pages/Turmas';
 import Professores from './pages/Professores';
+import Login from './pages/Login';
 
 function App() {
         return (
@@ -23,6 +24,7 @@ function App() {
                 <Route path='/horario' exact component={Horario} />
                 <Route path='/turmas' component={Turmas} />
                 <Route path='/professores' component={Professores} />
+                <Route path='/login' component={Login} />
               </Switch>
             </BrowserRouter>
           </>

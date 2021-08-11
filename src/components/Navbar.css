@@ -69,6 +69,7 @@
   }
   
   span {
+    
     margin-left: 16px;
   }
 
@@ -94,6 +95,7 @@
   }
 
   .nav-z {
+    
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -117,4 +119,9 @@
   
   .nav-z a:hover {
     background-color: #1a83ff;
+  }
+
+  .nav-z-p {
+    color: #fff;
+    text-decoration:underline;
   }

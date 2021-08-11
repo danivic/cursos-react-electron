@@ -45,7 +45,7 @@ export const SidebarData = [
                     path:"/professores",
                     icon:<FaIcons.FaChalkboardTeacher />,
                     cName:'nav-text'
-                    }
+                    }                    
 
 ]
 

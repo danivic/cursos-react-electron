@@ -8,32 +8,34 @@ import { IconContext } from 'react-icons';
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
-
   const showSidebar = () => setSidebar(!sidebar);
 
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
         <div className='navbar'>
-        <div className='nav-x'>
-          <Link to='#' className='menu-bars'>
-            <FaIcons.FaBars onClick={showSidebar} />            
-          </Link>
+          <div className='nav-x'>
+            <Link to='#' className='menu-bars'>
+              <FaIcons.FaBars onClick={showSidebar} />
+            </Link>
           </div>
           <div className='nav-z'>
-          <Link to='#' className='menu-bars'>
-            <FaIcons.FaUserAlt />
-            Login          
-          </Link>
-          </div>          
+           <Link to='/login' className='menu-bars'>          
+            <FaIcons.FaUserAlt/>
+            <div className='nav-z-p'>
+             <span>Login</span>
+             </div>
+             </Link>
+            
+             </div>
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>
             <li className='navbar-toggle'>
-            <div className='nav-x'>
-              <Link to='#' className='menu-bars'>
-                <AiIcons.AiOutlineClose />
-              </Link>
+              <div className='nav-x'>
+                <Link to='#' className='menu-bars'>
+                  <AiIcons.AiOutlineClose />
+                </Link>
               </div>
             </li>
             {SidebarData.map((item, index) => {
