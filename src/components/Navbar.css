@@ -102,9 +102,8 @@
     padding: 0px 0px 0px 0px;
     list-style: none;
     height: 60px;
-    position:fixed;
-    top: 10px;
-    right: 0%;
+    position:sticky;
+    left: 100%;
     margin: 0px 32px 0px 0px;
   }
   
