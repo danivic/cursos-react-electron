@@ -1,5 +1,5 @@
 {
-  "name": "electron-react",
+  "name": "cursos-electron-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,6 +8,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "antd": "^4.16.9",
+    "axios": "^0.21.1",
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^5.0.0-beta1",
     "electron-is-dev": "^1.2.0",
